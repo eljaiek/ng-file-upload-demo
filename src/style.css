@@ -1,0 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.box {
+    margin-top: 20%;
+    height: 200px;
+    width: 50%;
+}

@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="center-block box">
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="btn btn-info" ngf-select ng-model="$ctrl.file">Browse</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="btn btn-info" ngf-drop="$ctrl.upload($file)">Drop file here</div>
+                        <div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

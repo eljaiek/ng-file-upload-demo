@@ -1,0 +1,52 @@
+{
+  "name": "ng-file-upload-demo",
+  "version": "0.0.1",
+  "description": "Sakila Cloud demo web application",
+  "main": "webpack.config.babel.js",
+  "scripts": {
+    "start": "npm run server",
+    "build": "node_modules/.bin/rimraf dist && cross-env NODE_ENV=production node_modules/.bin/webpack -p --bail --progress --profile",
+    "server": "node_modules/.bin/webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eljaiek/sakila-docker-demo.git"
+  },
+  "author": "eduardo.eljaiek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eljaiek/sakila-docker-demo/issues"
+  },
+  "homepage": "https://github.com/eljaiek/sakila-docker-demo#readme",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.12",
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.8",
+    "angular-ui-bootstrap": "^2.5.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "ng-file-upload": "^12.2.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "imports-loader": "^0.7.1",
+    "ng-annotate-loader": "^0.6.1",
+    "node-libs-browser": "^2.0.0",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-config": "^7.0.0",
+    "webpack-dev-server": "^2.5.0"
+  }
+}
